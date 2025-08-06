@@ -1,4 +1,4 @@
-# NOAA-PMEL-OME_eDNA_Collection_Protocol_DiscFilters
+# NOAA-PMEL-OME_eDNA_Collection_Protocol_DiscFilter
 
 NOTE: This is an incomplete draft, including only the FAIRe and MIOP terms. A full procedure with all BeBOP sections completed will be released soon
 
