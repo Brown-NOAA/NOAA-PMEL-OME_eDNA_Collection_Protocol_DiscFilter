@@ -220,7 +220,7 @@ Bottle Sterilization Method (RO Not Available):
 
 1. Complete Steps 1-3 from Bottle Sterilization Method (RO Available)
 2. Close it with the cap, then wrap the top with parafilm to maintain sterility. **This shouldn’t be done more than 24 hours in advance of sampling.**
-5. Once the CTD is on deck, take bleached 1 L Nalgene bottles and dispense ~250 ml of the sample from the Niskin into the bottle; close the lid and shake vigorously. Dump. This will rid the container of residual bleach. Repeat process 2x (= three rinses in total). Water must come from the same Niskin that will be the source of the actual sample; otherwise, there will be cross-contamination.
+3. Once the CTD is on deck, take bleached 1 L Nalgene bottles and dispense ~250 ml of the sample from the Niskin into the bottle; close the lid and shake vigorously. Dump. This will rid the container of residual bleach. Repeat process 2x (= three rinses in total). Water must come from the same Niskin that will be the source of the actual sample; otherwise, there will be cross-contamination.
 
 **Bench Space Preparation:**
 If filtering seawater after collection, complete this vacuum filtration in a dry, sterile area. If filtering aliquoted EtOH samples, perform this work in a sterilized Biosafety Cabinet (BSC).
