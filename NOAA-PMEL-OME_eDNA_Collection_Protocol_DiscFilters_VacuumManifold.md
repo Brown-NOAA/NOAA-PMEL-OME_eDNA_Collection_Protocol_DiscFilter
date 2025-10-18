@@ -27,8 +27,8 @@ samp_category: sample
 env_broad_scale: marine biome [ENVO:00000447], marine photic zone [ENVO:00000209]
 env_local_scale: oceanic epipelagic zone biome [ENVO:01000035], marine benthic biome [ENVO:01000024]
 env_medium: sea water [ENVO:00002149] 
-habitat_natural_artificial_0_1: # 0
-samp_collect_method: # DOI
+habitat_natural_artificial_0_1: 0
+samp_collect_method:  DOI
 samp_collect_device: CTD Niskin rosette, ROV, plankton net tow, bucket
 samp_size: not applicable (variable)
 samp_size_unit: mL
@@ -59,7 +59,7 @@ samp_size_unit: mL
 | ------------ | ------------ | ------------ | --------- |
 |Shannon Brown | Ocean Molecular Ecology, NOAA PMEL & UW CICOES  | 0000-0001-9808-2638 |2025-08-06|
 |Han Weinrich  | Ocean Molecular Ecology, NOAA PMEL & UW CICOES  | 0009-0007-6063-0986 |2025-08-06|
-| Kenna Dailey | Ocean Molecular Ecology, NOAA PMEL & UW CICOES; UW School of Aquatic and Fishery Sciences | 0009-0008-5542-5336 | 2025-08-07
+|Kenna Dailey | Ocean Molecular Ecology, NOAA PMEL & UW CICOES; UW School of Aquatic and Fishery Sciences | 0009-0008-5542-5336 | 2025-08-07
 |Sean McAllister	|Ocean Molecular Ecology, NOAA PMEL & UW CICOES	|0000-0001-6654-3495	|2025-08-06|
 |Zachary Gold	|Ocean Molecular Ecology, NOAA PMEL	|0000-0003-0490-7630	|2025-08-06|
 
@@ -122,11 +122,11 @@ Sample collection and filtration protocol using disc filters to collect environm
 
 ### Method Description and Rationale
 
-This protocol describes the collection and filtration of samples through a 0.22 µm sterile disc filter to capture eDNA and DNA-containing particulates. DNA will later be extracted from these samples for multi-locus metabarcoding and qPCR analysis.. The protocol is intended for water collected with a Niskin bottle mounted on a ship-deployed CTD rosette sampler; however, it can also be used for filtering aliquoted ethanol from preserved plankton tow samples.
+This protocol describes the collection and filtration of samples through a 0.22 µm sterile disc filter to capture eDNA and DNA-containing particulates. DNA will later be extracted from these samples for multi-locus metabarcoding and qPCR analysis. The protocol is intended for water collected with a Niskin bottle mounted on a ship-deployed CTD rosette sampler; however, it can also be used for filtering water colleced by bucket or aliquoted ethanol from preserved plankton tow samples.
 
 ### Spatial Coverage and Environment(s) of Relevance
 
-This protocol has been used to filter eDNA for hundreds of ethanol aliquots taken from preserved plankton tow samples collected off the western coast of North America in the Northeastern Pacific Ocean, Bering Sea, and Arctic Ocean (primarily off California, Oregon, Washington, and Alaska). In addition, it has been used to filter eDNA from water samples in depth from the surface ocean (epipelagic biome) to just off bottom (benthic biome) at varying distances from shore (coastal to off-shelf).
+This protocol has been used to filter eDNA for hundreds of ethanol aliquots taken from preserved plankton tow samples collected off the western coast of North America in the Northeastern Pacific Ocean, Bering Sea, and Arctic Ocean (primarily off California, Oregon, Washington, and Alaska). In addition, it has been used to filter eDNA from water samples ranging in depth from the surface ocean (epipelagic biome) to just off bottom (benthic biome) at varying distances from shore (coastal to off-shelf).
 
 ### Personnel Required
 
@@ -146,7 +146,7 @@ If this protocol is used for water sampling with a Niskin, the time needed varie
 
 If this protocol is used to filter ethanol aliquoted from previously preserved plankton net tow or organismal samples, the removal of ethanol takes <5 min for every sample. Time is also influenced by the condition and organization of the samples, pre-sampling.
 
-The vacuum manifold set-up takes 30-45 minutes due to sterilization, then pending the turbidity of the sample, the filtering takes between 5-15 minutes. With a  vacuum manifold, three samples can be filtered simultaneously. Properly removing the filter from its setup and preserving it takes 5 minutes.
+The vacuum manifold set-up takes 30-45 minutes due to sterilization, then pending the turbidity of the sample, the filtering takes between 5-15 minutes. With a triple vacuum manifold, three samples can be filtered simultaneously. Properly removing the filter from its setup and preserving it takes 5 minutes.
 
 The total collection and filtering time for three samples, where ethanol preservative was aliquoted from a plankton net tow sample, and filtering is 90 minutes (1.5 hrs) on average. Set-up occurs once, and subsampling can be expedited with extra hands, so adding more samples will compound the filtering time but not other stages.
 
@@ -177,7 +177,7 @@ For a singular cast with three unique samples taken (one sample per Niskin) or t
 | Vacuum manifold |  PVC vacuum manifold, 3-Position, standard cup, 2-way valve  | Sterlitech | 1 | Can be substituted with generic; must fit 3/8” ID vacuum tubing. | 
 | Stoppers | Neoprene stoppers, size #08 | Generic | 1 | Can be purchased with a hole, or use a drill to create an appropriately sized hole for the filter cup adaptors. |
 | Pump | Standard vacuum pump | Generic | 1 |  |
-| Vacuum bottle | Heavy-duty carboy | Millipore Sigma | 1 | Can be substituted with generic; recommend at least 5 L to support the filtering of multiple samples. |
+| Vacuum waste bottle | Heavy-duty carboy | Millipore Sigma | 1 | Can be substituted with generic; recommend at least 5 L to support the filtering of multiple samples. |
 | Nalgene quick disconnect port lid | Quick filling/venting closures | Millipore Sigma | 1 | Must fit 3/8' ID tubing and vacuum bottle. |
 | Tubing | Non-phthalate PVC vacuum tubing (10 ft) | Fisher Scientific | 1 | Can be substituted with generic if appropriate diameter for pump. |
 | **Consumable equipment** |
@@ -186,7 +186,7 @@ For a singular cast with three unique samples taken (one sample per Niskin) or t
 | Nitrile gloves | Powder free nitrile gloves | Fisher Scientific | 3 | Can be substituted with generic nitrile gloves. Does not come sterile; it must be sterilized before use.|
 | Parafilm | Parafilm  | Sigma Aldrich |60 cm | |
 | Filter cups | Disposable filter funnel, sterile, 100 ml | Sterlitech | 4 | Can be substituted with generic. If not purchased with a 0.2 µm PVDF filter, it must be replaced before filtering the sample. |
-| 0.2 µm PVDF or PES filter | PVDF or PES membrane filters, 0.2 µm, 47mm, 100/Pk | Sterlitech | 4| Can be substituted with generic; must cover entire surface area of filter cup. |
+| 0.2 µm PVDF or PES filter | PVDF or PES membrane filters, 0.2 µm, 47mm, 100/Pk | Sterlitech | 4| Can be substituted with generic; must cover entire surface area of filter cup with no leaks. |
 |Serological pipettes |25 mL serological pipettes|Fisher Scientific|1|Only required for EtOH aliquoting.|
 | Lab notebook | Durable, hardcover lab notebook | Generic | 1 | Dedicated to the lab space.|
 | Writing utensils | Sharpies and pens | Generic | 2 | Dedicated to the lab extraction space. Not made of wood - must be able to be wiped down with bleach/EtOH.  |
@@ -203,7 +203,7 @@ To minimize the risk of cross-contamination, it is important to prepare a steril
 
 **Glove Sterilization:**
 
-When sterilizing any equipment or filtering, sterile nitrile gloves must be used. Gloves directly from the box are not considered sterile. To sterilize, squirt 10% bleach solution from a squirt bottle onto a new pair of gloves and rub hands together, then squirt with EtOH to get rid of bleach residue. Nitrile gloves should be worn at all times during the sterilization, sampling, filtering, preservation, and storage steps.
+When sterilizing any equipment for filtering, sterile nitrile gloves must be used. Gloves directly from the box are not considered sterile. To sterilize, squirt 10% bleach solution from a squirt bottle onto a new pair of gloves and rub hands together, then squirt with EtOH to get rid of bleach residue. Nitrile gloves should be worn at all times during the sterilization, sampling, filtering, preservation, and storage steps.
 
 **Bottle Sterilization:** - Only required if sampling water in the field.
 One sterile bottle is required for each sample and each field blank.
@@ -220,7 +220,7 @@ Bottle Sterilization Method (RO Not Available):
 
 1. Complete Steps 1-3 from Bottle Sterilization Method (RO Available)
 2. Close it with the cap, then wrap the top with parafilm to maintain sterility. **This shouldn’t be done more than 24 hours in advance of sampling.**
-3. Once the CTD is on deck, take bleached 1 L Nalgene bottles and dispense ~250 ml of the sample from the Niskin into the bottle; close the lid and shake vigorously. Dump. This will rid the container of residual bleach. Repeat process 2x (= three rinses in total). Water must come from the same Niskin that will be the source of the actual sample; otherwise, there will be cross-contamination.
+3. Once the CTD is on deck, take a bleached 1 L Nalgene bottles and dispense ~250 ml of the sample from the Niskin into the bottle; close the lid and shake vigorously. Dump. This will rid the container of residual bleach. Repeat process 2x (= three rinses in total). Water must come from the same Niskin that will be the source of the actual sample; otherwise, there will be cross-contamination.
 
 **Bench Space Preparation:**
 If filtering seawater after collection, complete this vacuum filtration in a dry, sterile area. If filtering aliquoted EtOH samples, perform this work in a sterilized Biosafety Cabinet (BSC).
@@ -245,12 +245,13 @@ The filter cups purchased by OME came with 0.45 µm filters, so we manually repl
 1. Put on a pair of sterilized gloves. Then, sterilize the BSC by wiping with 10% bleach, followed by 70% EtOH. Prepare a workspace by laying down two large kimwipes.
 2. Wipe down forceps with DNAaway, then flame sterilize with EtOH. Place cooled forceps on kimwipe.
 3. Carefully open the filter cup's bag and remove the filter cup. 
-    + Do not damage the bag, as you will be resealing the prepared filter here.
+    + Do not damage the bag, as you will be resealing the prepared filter in here.
 7. Working one at a time, twist and remove the top funnel component of the filter cup.
-8. Using sterile forceps, remove the existing top filter and dispose of it. Do not remove the backing.
-9. Place a new 0.2 µm PVDF filter inside the cup using the same sterilized forceps.
+8. Using sterile forceps, remove the existing top filter and dispose of it. Do not remove the paper filter backing underneath.
+9. Place a new 0.2 µm PVDF or PES filter inside the cup on top of the paper backing filter using the same sterilized forceps.
 10. Gently tap along the edges with the forceps to ensure the filter is snugly in place at the bottom of the cup.
 11. Resecure the top funnel component of the filter cup by pushing and twisting to ensure a tight seal.
+12. Inspect the margins where the funnel component sits to ensure there are no gaps - or else the filter is not seated correctly and liquid will leak past it.
 13. Return the filter cup to its original bag and seal securely with lab tape. 
     + Filter cups resealed with lab tape can be stored for no longer than 1 week.
 
@@ -278,7 +279,7 @@ If this protocol is used to filter ethanol aliquoted from previously preserved p
 1. Before starting, swirl each sample jar to homogenize the ethanol and any organismal material. Complete this at least 30 min before aliquoting to ensure particulates settle.
 2. Put on a pair of sterilized gloves. Then, sterilize the bench space by wiping with 10% bleach, followed by 70% EtOH.
 3. Pre-label 50 mL Falcon tubes with the sample ID number. 
-    + The number of aliquots per jar will depend on the desired aliquot volume, original sample volume, and the density of material within the sample.
+    + The number of aliquots taken from each jar will depend on the desired aliquot volume, original sample volume, and the density of material within the sample.
 5. Remove the cap from a pre-labeled Falcon tube and place it facing upwards on a clean bench surface.
 6. Remove the lid from the corresponding sample jar and place it facing upwards on the bench.
      + Avoid splashing or creating ethanol droplets to minimize the risk of cross-contamination.
@@ -292,7 +293,7 @@ If this protocol is used to filter ethanol aliquoted from previously preserved p
 Whether you are filtering seawater samples recently collected from a Niskin CTD rosette or you are filtering EtOH aliquots taken from preserved samples, the filtering protocol is as follows:
 
 1. Remove filter cups from the plastic bag and connect them to the manifold using the stopper and connector piece. Set up three at a time. Turn on the pump.
-   + Monitor the pump pressure to ensure it does not exceed a pressure of 10.
+   + Monitor the pump pressure to ensure it does not exceed the manufacturer reccomended pressure.
    + Do not dispose of the blue cap on the bottom of the filter cup - remove it and face it upwards for later use.
 
 2. If not already labeled, denote the sample number on the filter cup. Remove the clear lid and then pour in the contents of the corresponding Falcon tube.
@@ -301,12 +302,12 @@ Whether you are filtering seawater samples recently collected from a Niskin CTD 
 5. Carefully remove the filter cup from the manifold, add the previously set aside blue cap to the bottom, and set the filter cup aside.
 6. In batches or once all the samples are filtered, twist and remove the top funnel component of the filter cup one at a time and discard the funnel.
 7. Using sterilized forceps, remove the filter membrane, being careful not to remove the backing. Place the filter into the pre-labeled 5 mL tube.
-8. Sterilize the forceps between filter membranes using 70% ethanol and flame.
+8. Sterilize the forceps between filter membranes using 70% ethanol and flame. Sterilize gloves between samples using 10% bleach followed by 70% EtOH.
 
 ### Sample Preservation
-If the samples were collected in the field and filtered for eDNA using a vacuum manifold, we used a 1000 μL pipette to add 4 mL of 100% molecular grade EtOH for long-term storage. The 5 mL tube was then sealed with parafilm before being stored permanently.
+If the samples were collected in the field and filtered for eDNA using a vacuum manifold (water samples), we used a 1000 μL pipette to add 4 mL of 100% molecular grade EtOH for long-term storage. The 5 mL tube was then sealed with parafilm before being stored permanently.
 
-If the samples were EtOH aliquots from preserved organismal or net tow samples, no additional preservative was added to the filter in the 5 mL tube. To prevent any evaporation, each tube was sealed with parafilm.
+If the samples were EtOH aliquots from preserved organismal or net tow samples, no additional preservative was added to the filter in the 5 mL tube. To prevent any evaporation, each tube was sealed with parafilm after closing.
 
 ### Storage
 
@@ -322,8 +323,12 @@ A blank consisting of sterile RO water in a 50 mL Falcon tube is filtered at the
 
 **Solution 1**: First, double-check you are using the appropriate filter size. If the filter is improperly seated, consider transferring sample contents to a new filter cup. If not feasible, briefly open and close the valve to allow the filter to settle before continuing. 
 
+**Issue 2**: Liquid is draining from the filter cup much faster than expected.
+
+**Solution 2**: The filter may not be seated or sealed correctly, allowing your sample to bypass the filter. Close the vacuum valve immediately, get a new filter cup and set up on the vecuum manifold. Pour the rest of the sample from the leaking filter cup into the new one. Save both filters for later extraction and label tubes carefully to denote 2 filters from the same sample.
+
+
 ## REFERENCES
 
 
-
-Link templates (e.g. preformatted spreadsheets) used to record measurements and report on the quality of the data as well as any documents such as manufacturer specifications, images, etc that support this protocol. Please include a short note describing the document's r
+Link templates (e.g. preformatted spreadsheets) used to record measurements and report on the quality of the data as well as any documents such as manufacturer specifications, images, etc that support this protocol. 
