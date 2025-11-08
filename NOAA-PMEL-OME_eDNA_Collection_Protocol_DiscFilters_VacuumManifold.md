@@ -4,10 +4,10 @@ methodology_category: sample collection
 project: NOAA Pacific Marine Environmental Laboratory Ocean Molecular Ecology Group protocols
 purpose: biodiversity assessment objective [OBI:0001969]
 analyses: filtration [OBI:0302885], environmental material collection process [OBI:0600012]
-geographic_location: North East Pacific Ocean [GAZ:00013765], Bering Sea [GAZ:00008990], Arctic Ocean [GAZ:00000323]
-broad_scale_environmental_context: marine biome [ENVO:00000447], marine photic zone [ENVO:00000209]
-local_environmental_context: oceanic epipelagic zone biome [ENVO:01000035], marine benthic biome [ENVO:01000024]
-environmental_medium: sea water [ENVO:00002149], planktonic material [ENVO_01000063]
+geographic_location: North East Pacific Ocean [GAZ:00013765], Bering Sea [GAZ:00008990], Arctic Ocean [GAZ:00000323], Lake Washington [GAZ:00008722], South Pacific Ocean [GAZ:00002418]
+broad_scale_environmental_context: marine biome [ENVO:00000447], marine photic zone [ENVO:00000209], freshwater biome [ENVO:00000873]
+local_environmental_context: oceanic epipelagic zone biome [ENVO:01000035], marine benthic biome [ENVO:01000024], freshwater lake biome [ENVO:01000252], estuary [ENVO:00000045]
+environmental_medium: sea water [ENVO:00002149], fresh water [ENVO:00002011], planktonic material [ENVO_01000063]
 target: deoxyribonucleic acid (DNA) [NCIT:C449], environmental DNA [NCIT:C169106]
 creator: Shannon Brown, Han Weinrich, Kenna Dailey
 materials_required: filtration [OBI:0302885], vacuum manifold [OBI:0001116]
@@ -15,7 +15,7 @@ skills_required: sterile technique, pipetting skills, standard molecular techniq
 time_required: 90
 personnel_required: 1
 language: en
-issued: 2025-10-15
+issued: 2025-11-06
 audience: scientists
 publisher: NOAA Pacific Marine Environmental Laboratory Ocean Molecular Ecology Program; University of Washington Cooperative Institute for Climate, Ocean, & Ecosystem Studies
 hasVersion: 1
@@ -24,13 +24,13 @@ maturity level: mature
 
 # FAIRe terms
 samp_category: sample
-env_broad_scale: marine biome [ENVO:00000447], marine photic zone [ENVO:00000209]
-env_local_scale: oceanic epipelagic zone biome [ENVO:01000035], marine benthic biome [ENVO:01000024]
-env_medium: sea water [ENVO:00002149] 
+env_broad_scale: marine biome [ENVO:00000447], marine photic zone [ENVO:00000209], freshwater biome [ENVO:00000873]
+env_local_scale: oceanic epipelagic zone biome [ENVO:01000035], marine benthic biome [ENVO:01000024], freshwater lake biome [ENVO:01000252], estuary [ENVO:00000045]
+env_medium: sea water [ENVO:00002149], fresh water [ENVO:00002011], planktonic material [ENVO_01000063]
 habitat_natural_artificial_0_1: 0
 samp_collect_method:  DOI
 samp_collect_device: CTD Niskin rosette, ROV, plankton net tow, bucket
-samp_size: not applicable (variable)
+samp_size: not applicable
 samp_size_unit: mL
 ---
 
@@ -72,7 +72,9 @@ samp_size_unit: mL
 
 | PROTOCOL NAME | LINK         | VERSION      | RELEASE DATE | INTERNAL/EXTERNAL |
 | ------------- | ------------ | ------------ | ------------ | ----------------- |
-| NOAA-PMEL-OME_eDNA_DiscFilters_Extraction_Protocol_Centrifuge | https://github.com/HanWeinrich/NOAA-PMEL-OME_eDNA_DiscFilters_Extraction_Protocol_Centrifuge_BeBOP/blob/main/NOAA-PMEL-OME_eDNA_DiscFilters_Extraction_Protocol_Centrifuge.md |  1.1.1  | 2025-10-06 | Internal |
+| NOAA-PMEL-OME_eDNA_Collection_Protocol_Sterivex_GravityBag | https://github.com/Brown-NOAA/NOAA-PMEL-OME_eDNA_Collection_Protocol_Sterivex_GravityBag_BeBOP/blob/main/NOAA-PMEL-OME_eDNA_Collection_Protocol_Sterivex_GravityBag.md |1.1.0|2025-11-06  | Internal |
+| NOAA-PMEL-OME_eDNA_Collection_Protocol_Sterivex_PeristalticPump | https://github.com/marinednadude/NOAA-PMEL-OME_eDNA_Collection_Protocol_Niskin/blob/main/NOAA-PMEL-OME_eDNA_Collection_Protocol_Sterivex_PeristalticPump.md |  1.1.1  | 2025-11-06 | Internal |
+| NOAA-PMEL-OME_eDNA_DiscFilters_Extraction_Protocol_Centrifuge | https://github.com/HanWeinrich/NOAA-PMEL-OME_eDNA_DiscFilters_Extraction_Protocol_Centrifuge_BeBOP/blob/main/NOAA-PMEL-OME_eDNA_DiscFilters_Extraction_Protocol_Centrifuge.md |  1.1.1  | 2025-11-06 | Internal |
 
 ### Protocol Revision Record
 
@@ -83,7 +85,7 @@ samp_size_unit: mL
 | VERSION | RELEASE DATE | DESCRIPTION OF REVISIONS |
 | ------------- | ------------- | ------------- |
 | 1.0.0 | 2025-08-06 | Initial beta release with FAIRe and MIOP terms |
-| 1.1.0 | 2025-10-20| Finalized draft |
+| 1.1.0 | 2025-11-06| Formalized draft with background and detailed protocol |
 
 ### Acronyms and Abbreviations
 
@@ -93,6 +95,7 @@ samp_size_unit: mL
 |CICOES| Cooperative Institute for Climate, Ocean, & Ecosystem Studies|
 | CTD | Conductivity Temperature Depth |
 |DNA	|Deoxyribonucleic acid|
+|Disc | Flat, thin, round object (interchangeable with disk |
 |eDNA	|environmental DNA|
 |EtOH| Ethanol|
 |NOAA|National Oceanic and Atmospheric Administration|
@@ -118,11 +121,13 @@ samp_size_unit: mL
 
 ### Summary
 
-Sample collection and filtration protocol using disc filters to collect environmental DNA from marine ecosystems or preserved net tow samples. This collection and filtration protocol is used by the NOAA PMEL Ocean Molecular Ecology (OME) Group.
+Sample collection and filtration protocol using disc filters to collect environmental DNA from marine ecosystems or preserved net tow samples. The methods detailed in this protocol are applicable no matter the mesh size; however, NOAA PMEL Ocean Molecular Ecology (OME) Group employs this protocol with a 0.22 µm sterile disc filter as the set standard.
+
+This collection and filtration protocol is used by the NOAA PMEL Ocean Molecular Ecology (OME) Group.
 
 ### Method Description and Rationale
 
-This protocol describes the collection and filtration of samples through a 0.22 µm sterile disc filter to capture eDNA and DNA-containing particulates. DNA will later be extracted from these samples for multi-locus metabarcoding and qPCR analysis. The protocol is intended for water collected with a Niskin bottle mounted on a ship-deployed CTD rosette sampler; however, it can also be used for filtering water colleced by bucket or aliquoted ethanol from preserved plankton tow samples.
+This protocol describes the collection and filtration of samples through a disc filter to capture eDNA and DNA-containing particulates. DNA will later be extracted from these samples for multi-locus metabarcoding and qPCR analysis. The protocol is intended for water collected with a Niskin bottle mounted on a ship-deployed CTD rosette sampler; however, it can also be used for filtering water collected by bucket or aliquoted ethanol from preserved plankton tow samples.
 
 ### Spatial Coverage and Environment(s) of Relevance
 
@@ -134,7 +139,7 @@ One person with pipetting experience. Recommend field research experience, but n
 
 ### Safety
 
-This protocol does not involve any hazardous chemicals, although standard precautions, including wearing PPE, should be taken to avoid skin and eye exposure to bleach and ethanol.
+This protocol uses bleach and ethanol, both of which are classified as hazardous chemicals. Appropriate PPE must be worn, and standard safety procedures should be followed to avoid skin and eye exposure.
 
 ### Training Requirements
 
@@ -199,7 +204,7 @@ For a singular cast with three unique samples taken (one sample per Niskin) or t
 
 ### Preparation
 
-To minimize the risk of cross-contamination, it is important to prepare a sterile workspace and equipment prior to beginning the protocol.
+To minimize the risk of cross-contamination, it is important to prepare a sterile workspace and equipment before beginning the protocol.
 
 **Glove Sterilization:**
 
@@ -220,7 +225,7 @@ Bottle Sterilization Method (RO Not Available):
 
 1. Complete Steps 1-3 from Bottle Sterilization Method (RO Available)
 2. Close it with the cap, then wrap the top with parafilm to maintain sterility. **This shouldn’t be done more than 24 hours in advance of sampling.**
-3. Once the CTD is on deck, take a bleached 1 L Nalgene bottles and dispense ~250 ml of the sample from the Niskin into the bottle; close the lid and shake vigorously. Dump. This will rid the container of residual bleach. Repeat process 2x (= three rinses in total). Water must come from the same Niskin that will be the source of the actual sample; otherwise, there will be cross-contamination.
+3. Once the CTD is on deck, take a bleached 1 L Nalgene bottle and dispense ~250 ml of the sample from the Niskin into the bottle; close the lid and shake vigorously. Dump. This will rid the container of residual bleach. Repeat process 2x (= three rinses in total). Water must come from the same Niskin that will be the source of the actual sample; otherwise, there will be cross-contamination.
 
 **Bench Space Preparation:**
 If filtering seawater after collection, complete this vacuum filtration in a dry, sterile area. If filtering aliquoted EtOH samples, perform this work in a sterilized Biosafety Cabinet (BSC).
@@ -239,8 +244,7 @@ If filtering seawater after collection, complete this vacuum filtration in a dry
 3. Rinse the inside of the manifold with RO water three times to remove any residual bleach.
 
 **Filter Cup Preparation:**
-
-The filter cups purchased by OME came with 0.45 µm filters, so we manually replaced the filters with the desired 0.2 µm PVDF filters in batches of 50-100 prior to beginning the filtration protocol. This whole filter replacement procedure should take place in a BSC.
+If filter cups are purchased with the designed mesh size, skip this step. In several cases, the filter cups purchased by OME came with 0.45 µm filters, so we manually replaced the filters with the desired 0.2 µm PVDF filters in batches of 50-100 before beginning the filtration protocol. This whole filter replacement procedure should take place in a BSC.
 
 1. Put on a pair of sterilized gloves. Then, sterilize the BSC by wiping with 10% bleach, followed by 70% EtOH. Prepare a workspace by laying down two large kimwipes.
 2. Wipe down forceps with DNAaway, then flame sterilize with EtOH. Place cooled forceps on kimwipe.
@@ -293,11 +297,12 @@ If this protocol is used to filter ethanol aliquoted from previously preserved p
 Whether you are filtering seawater samples recently collected from a Niskin CTD rosette or you are filtering EtOH aliquots taken from preserved samples, the filtering protocol is as follows:
 
 1. Remove filter cups from the plastic bag and connect them to the manifold using the stopper and connector piece. Set up three at a time. Turn on the pump.
-   + Monitor the pump pressure to ensure it does not exceed the manufacturer reccomended pressure.
+   + Monitor the pump pressure to ensure it does not exceed the manufacturer's recommended pressure.
    + Do not dispose of the blue cap on the bottom of the filter cup - remove it and face it upwards for later use.
 
 2. If not already labeled, denote the sample number on the filter cup. Remove the clear lid and then pour in the contents of the corresponding Falcon tube.
 3. Add the clear lid back to the filter cup and turn the valve of the vacuum manifold from horizontal (closed) to vertical (open) to begin filtering.
+   + When filtering, always place the lid on the filter cup to minimize external contamination. However, depending on the cup’s design, ensure that the lid does not form a tight seal, as this can create a vacuum and cause the cup to implode.
 4. Allow the sample to filter completely until dry, then close the valve.
 5. Carefully remove the filter cup from the manifold, add the previously set aside blue cap to the bottom, and set the filter cup aside.
 6. In batches or once all the samples are filtered, twist and remove the top funnel component of the filter cup one at a time and discard the funnel.
@@ -319,16 +324,15 @@ A blank consisting of sterile RO water in a 50 mL Falcon tube is filtered at the
 
 ### Basic Troubleshooting Guide
 
-**Issue 1**: Filter of the filter cup is lifting during vacuum manifold filtration
+**Issue 1**: The filter of the filter cup is lifting during vacuum manifold filtration
 
-**Solution 1**: First, double-check you are using the appropriate filter size. If the filter is improperly seated, consider transferring sample contents to a new filter cup. If not feasible, briefly open and close the valve to allow the filter to settle before continuing. 
+**Solution 1**: First, double-check you are using the appropriate filter size. If the filter is improperly seated, consider transferring the sample contents to a new filter cup. If not feasible, briefly open and close the valve to allow the filter to settle before continuing. 
 
 **Issue 2**: Liquid is draining from the filter cup much faster than expected.
 
-**Solution 2**: The filter may not be seated or sealed correctly, allowing your sample to bypass the filter. Close the vacuum valve immediately, get a new filter cup and set up on the vecuum manifold. Pour the rest of the sample from the leaking filter cup into the new one. Save both filters for later extraction and label tubes carefully to denote 2 filters from the same sample.
-
+**Solution 2**: The filter may not be seated or sealed correctly, allowing your sample to bypass the filter. Close the vacuum valve immediately, get a new filter cup, and set up on the vacuum manifold. Pour the rest of the sample from the leaking filter cup into the new one. Save both filters for later extraction and label tubes carefully to denote 2 filters from the same sample.
 
 ## REFERENCES
 
-
-Link templates (e.g. preformatted spreadsheets) used to record measurements and report on the quality of the data as well as any documents such as manufacturer specifications, images, etc that support this protocol. 
+## APPENDIX A: DATASHEETS
+[OME_Collection_eDNA_ProtocolSheet](https://docs.google.com/spreadsheets/d/1MKNcWcW8v8AlEfASEV-uqE-QKrhblGvU/edit?usp=sharing&ouid=112961731900530069948&rtpof=true&sd=true)
