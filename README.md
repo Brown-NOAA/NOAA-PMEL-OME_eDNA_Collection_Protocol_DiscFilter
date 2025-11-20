@@ -1,5 +1,7 @@
 # NOAA-PMEL-OME_eDNA_Collection_Protocol_DiscFilter_VacuumManifold_BeBOP
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17655056.svg)](https://doi.org/10.5281/zenodo.17655056)
+
 See [NOAA-PMEL-OME_eDNA_Collection_Protocol_DiscFilters_VacuumManifold](https://github.com/Brown-NOAA/NOAA-PMEL-OME_eDNA_Collection_Protocol_DiscFilters_VacuumManifold_BeBOP/blob/main/NOAA-PMEL-OME_eDNA_Collection_Protocol_DiscFilters_VacuumManifold.md) for the detailed protocol.  
 
 # Disclaimer
